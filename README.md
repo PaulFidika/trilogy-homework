@@ -1,0 +1,1 @@
+This is the repo where I store all my homework projects for my Full Stack Flex Denver University Course
