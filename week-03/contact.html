@@ -6,14 +6,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Hey there, I'm Paul Fidika and I'm taking a Trilogy Full Stack Flex program through Denver University. Thanks for checking out my work!" />
-    <title>Paul Fidika - Contact Me</title>
+    <title>Paul Fidika - About Me</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
 </head>
 
 <body>
 
-</body>
+    <div class="container" style="background-color: lightgray;">
 
-</html>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a class="navbar-brand">Paul Fidika</a>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#target">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Header LInks -->
+            <div class="collapse navbar-collapse" id="target">
+                <ul class="navbar-nav mr-auto">
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <p></p>
+
+
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="inputEmail">Your E-mail Address:</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="helloworld@gmail.com">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputName">Your Name:</label>
+                    <input type="text" class="form-control" id="inputName" placeholder="John Doe">
+                </div>
+            </div>
+            <div class="form-group col-md-5">
+                <label for="textMessage">Message:</label>
+                <textarea class="form-control" id="textMessage" rows="4" placeholder="Hey there"></textarea>
+            </div>
+
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        I agree to the terms and conditions
+                    </label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+
+
+
+
+
+        <!-- Footer -->
+        <footer class="page-footer font-small text-right"
+            style="color: white; background-color:indigo; padding: 6px; margin-top: 6px;">
+            © 2020 Paul Fidika &nbsp; &nbsp;
+        </footer>
+
+    </div>
+
+</body>
