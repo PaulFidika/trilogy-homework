@@ -3,7 +3,8 @@
 function initializeQuiz() {
     $("#title").html("Hey there all you cool cats and kittens! Are you ready for a coding challenge? Of course you are! Press start, if you dare.")
         .show();
-    $("#leaderboard").hide();
+    $("#leaderboard").empty().
+        hide();
     $("#fname").hide();
     $("#timer").hide();
     $("#button-0").html("Start Quiz")
@@ -123,8 +124,13 @@ function leaderBoard() {
         $("#leaderboard").prepend(entry);
     }
 
+    entry = document.createElement("div");
+    entry.innerHTML = "<h3>Leaderboard:</h3>";
+    $("#leaderboard").prepend(entry);
+
     $("#leaderboard").show();
     $("#fname").hide();
+    $("#title").hide();
     $("#button-0").html("Take the quiz again")
         .off("click")
         .click(initializeQuiz);
