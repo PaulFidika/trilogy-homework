@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Super Minimal JavaScript Coding Quiz</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <style>
+        .wrong {
+            text-decoration: line-through;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="timer">Time Remaining: 45 seconds</div>
+    <div id="title"></div>
+
+    <h3>
+        <div id="question"></div>
+    </h3>
+    <ul>
+        <li id="answer-0" value="0"></li>
+        <li id="answer-1" value="1"></li>
+        <li id="answer-2" value="2"></li>
+        <li id="answer-3" value="3"></li>
+    </ul>
+    <div id="result"></div>
+
+    <form id="form-0">
+        <label for="fname"></label>
+        <input type="text" id="fname" name="fname">
+    </form>
+
+    <button id="button-0"></button>
+
+
+    <ul id="leaderboard"></ul>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
