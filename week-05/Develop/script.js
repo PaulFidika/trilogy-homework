@@ -76,14 +76,12 @@ function getMemory(hour) {
 
 // saves items in local storage
 function setMemory(hour, item) {
-    console.log(hour, item);
     localStorage.setItem(now.format("MMMM Do YYYY") + hour, item);
 }
 
 // changes the styling of the fields to correspond to the time of day
 function markupDay() {
     const t = moment();
-    console.log(t.hours());
 
     if (t.format("MMMM Do YYYY") == now.format("MMMM Do YYYY")) { // displayed date is current date
         for (i = 0; i < businessHours; i++) {
