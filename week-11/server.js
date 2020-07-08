@@ -12,6 +12,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 require("./routes/api-routes.js")(app);
 require("./routes/html-routes.js")(app);
 
+if (process.env.NODE_ENV === 'production') {
+    //app.use(express.static('client/build'));
+};
+
 app.listen(PORT, () => {
     console.log(`App is running and listening on http://localhost:${PORT}`);
-})
+});
